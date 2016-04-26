@@ -1,4 +1,5 @@
-#Lowes Library System  lib.zhelishi.cn:1995
+#Lowes Library System  
+[传送门](http://lib.zhelishi.cn:1995)
 ##数据库系统概念期中大作业
 
 ###Version 1.2
