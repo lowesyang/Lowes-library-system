@@ -5,6 +5,7 @@
 ####前端:
 * 使用flatUI+jquery+vue.js
 * 利用Vue进行组件化开发
+
 ####后端:
 * 使用Node.js+express
 * 使用MySQL数据库
