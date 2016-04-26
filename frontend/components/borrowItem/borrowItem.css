@@ -1,0 +1,65 @@
+.borrowItem{
+    margin:10px auto;
+    font-size: 14px;
+    border:2px solid #1abc9c;
+    border-radius: 4px;
+}
+
+.borrowItem>.infoBox{
+    text-align: left;
+    float:left;
+}
+.borrowItem>.infoBox>span{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+.borrowItem>.infoBox>span:first-child{
+    width:100px;
+    margin-left: 20px;
+}
+.borrowItem>.infoBox>span:last-child{
+    width:100px;
+}
+.borrowItem ul{
+    text-align: left;
+    list-style-type: none;
+    margin:10px 20px;
+}
+.borrowItem ul>li{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:150px;
+    margin-right: 30px;
+}
+.borrowItem h5{
+    text-align: center;
+    font-size: 24px;
+    width:140px;
+    margin-right:10px;
+    margin-top: 20px;
+    color:#1abc9c;
+    float:right;
+}
+.borrowItem .cl{
+    clear:both;
+}
+.borrowItem .book_num{
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    margin-top: 20px;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+}
+.noResult{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}

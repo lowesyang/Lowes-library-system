@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>借书证管理--Lowes Library System</title>
+    <link href="//cdn.bootcss.com/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/components/navbar/navbar.css">
+    <link rel="stylesheet" href="/components/loginBox/loginBox.css">
+    <link rel="stylesheet" href="/view/card/card.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/flat-ui/2.2.2/js/flat-ui.min.js"></script>
+    <script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+</head>
+<body>
+<lowesnavbar></lowesnavbar>
+<% if(login!=true) { %>
+<loginbox></loginbox>
+<% } else { %>
+<div class="container">
+    <div class="addCard">
+        <h5>添加借书证</h5>
+        <form>
+            <select class="form-control select select-primary">
+                <option value="学生">学生</option>
+                <option value="教师">教师</option>
+                <option value="校外人士">校外人士</option>
+                <option value="老司机">老司机</option>
+            </select>
+            借书证ID：<input type="text" class="form-control" placeholder="借书证ID">
+            姓名：<input type="text" class="form-control" placeholder="姓名">
+            单位：<input type="text" class="form-control" placeholder="单位">
+            <button type="submit" class="btn btn-primary submitBtn">添加</button>
+        </form>
+    </div>
+    <div class="cardList" id="cardList">
+        <table>
+            <tr>
+                <th>借书证ID</th>
+                <th>姓名</th>
+                <th>单位</th>
+                <th>类型</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    </div>
+    <div class="cl"></div>
+</div>
+<% } %>
+<script src="/components/navbar/navbar.js"></script>
+<script src="/components/loginBox/loginBox.js"></script>
+<script src="/components/rowItem/rowItem.js"></script>
+<script src="/view/card/card.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+button{
+    cursor:pointer;
+}
+.container{
+    width:1000px;
+    min-width:960px;
+    margin:0px auto;
+    text-align: left;
+}
+.addCard{
+    position: fixed;
+    width:400px;
+    top:100px;
+    margin-left: 10px;
+}
+.addCard>form{
+    width:300px;
+}
+.addCard>form>input{
+    margin: 5px 0px 10px 0px;
+    display: block;
+    width:250px;
+    height:20px;
+}
+.addCard>form>.select{
+    display: block;
+    width:200px;
+    margin-bottom: 10px;
+}
+.cardList{
+    float: right;
+    margin-top: 120px;
+}
+.cardList>table{
+    width:600px;
+    height:auto;
+    margin:10px auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.cardList>table tr:hover{
+    background-color: #d7d7d7;
+}
+.cardList>table td{
+    padding:5px 0px;
+    overflow: hidden;
+    width:100px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.cardList .noResult{
+    display: block;
+    margin: 20px auto;
+}
+.cl{
+    clear:both;
+}

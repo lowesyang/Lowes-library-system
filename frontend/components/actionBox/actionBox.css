@@ -1,0 +1,25 @@
+.actionBox{
+    width:300px;
+    height:auto;
+    margin:100px auto;
+    margin-bottom: 50px;
+}
+.actionBox>form>input{
+    width:100%;
+    margin-top: 20px;
+}
+.actionBox>form button{
+    font-size: 18px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.actionBox .searchBtn{
+    margin-left: 10px;
+}
+.actionBox .logout{
+    margin-left: 10px;
+}
+.resultBox{
+    width:580px;
+    margin: 50px auto;
+}

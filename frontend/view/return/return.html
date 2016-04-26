@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>归还--Lowes Library System</title>
+    <link href="//cdn.bootcss.com/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/components/navbar/navbar.css">
+    <link rel="stylesheet" href="/components/loginBox/loginBox.css">
+    <link rel="stylesheet" href="/components/actionBox/actionBox.css">
+    <link rel="stylesheet" href="/components/borrowItem/borrowItem.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/flat-ui/2.2.2/js/flat-ui.min.js"></script>
+    <script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+</head>
+<body>
+<lowesnavbar></lowesnavbar>
+<% if(login!=true) {%>
+<loginbox></loginbox>
+<% } else { %>
+<actionbox title="归还图书" btn-name="还书" admin="<%= userName %>"></actionbox>
+<% } %>
+<script src="/components/navbar/navbar.js"></script>
+<script src="/components/borrowItem/borrowItem.js"></script>
+<script src="/components/loginBox/loginBox.js"></script>
+<script src="/components/actionBox/actionBox.js"></script>
+<script src="../../static/js/functions.js"></script>
+<script src="/view/return/return.js"></script>
+</body>
+</html>

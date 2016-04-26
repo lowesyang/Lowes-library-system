@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:1000px;
+    min-width:960px;
+    margin:0px auto;
+    text-align: center;
+}
+.container .searchBox{
+    position: fixed;
+    top: 80px;
+    float:left;
+    width:400px;
+    margin-left: 5px;
+}
+.container .searchBox>h4{
+    text-align: left;
+}
+.container form{
+    margin:30px auto;
+    width:400px;
+    text-align: left;
+}
+.container form>.search{
+    margin-top: 20px;
+    width:100%;
+    max-width:300px;
+    height:25px;
+}
+.container form>.select{
+    display: block;
+    position: relative;
+    width:200px;
+}
+.container form>.priceArea{
+    position: relative;
+    display: none;
+    margin-top:20px;
+}
+.container form>.priceArea>.price{
+    width:40px;
+    height:20px;
+}
+.container form>.submitBtn{
+    margin-top: 20px;
+    cursor:pointer;
+}
+.resultBox{
+    width:580px;
+    float:right;
+    margin-top: 100px;
+}
+.notice{
+    display: block;
+    margin-top: 50px;
+    font-size: 60px;
+    color:#8a8a8a;
+}

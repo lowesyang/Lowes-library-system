@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lowes Library System</title>
+    <link href="//cdn.bootcss.com/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/components/navbar/navbar.css">
+    <link rel="stylesheet" href="/components/bookItem/bookItem.css">
+    <link rel="stylesheet" href="/view/main/main.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/flat-ui/2.2.2/js/flat-ui.min.js"></script>
+    <script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+</head>
+<body>
+<lowesnavbar></lowesnavbar>
+<div class="container">
+    <div class="searchBox">
+        <h4>图书搜索</h4>
+        <form>
+            <select class="form-control select select-primary">
+                <option value="book_id">图书ID</option>
+                <option value="book_type">类别</option>
+                <option value="book_name">书名</option>
+                <option value="publish_house">出版社</option>
+                <option value="year">年份</option>
+                <option value="author">作者</option>
+                <option value="price">价格 (仅支持图书名称的模糊搜索)</option>
+            </select>
+            <div class="priceArea">
+                <input type="text" class="form-control price"> --
+                <input type="text" class="form-control price">
+            </div>
+            <input type="text" class="form-control search" placeholder="ID/书名/类型...">
+            <button type="submit" class="btn btn-primary submitBtn">search</button>
+        </form>
+    </div>
+    <div class="resultBox" id="resultBox">
+        <span class="notice">(づ｡◕‿‿◕｡)づ</span>
+    </div>
+</div>
+<script src="../../static/js/functions.js"></script>
+<script src="/view/main/main.js"></script>
+<script src="/components/bookItem/bookItem.js"></script>
+<script src="/components/navbar/navbar.js"></script>
+</body>
+</html>

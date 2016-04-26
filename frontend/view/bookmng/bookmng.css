@@ -1,0 +1,65 @@
+.bookForm{
+    width:800px;
+    margin:80px auto;
+    font-size: 14px;
+}
+.cl{
+    clear:both;
+}
+.bookForm>.deleteBox{
+    display: none;
+    margin:100px auto;
+    width:250px;
+    font-size: 18px;
+}
+.bookForm>.deleteBox>form>input{
+    width:250px;
+    height:20px;
+}
+.bookForm>.left>form>input{
+    display: block;
+    width:200px;
+    height:10px;
+    margin-bottom: 10px;
+}
+.bookForm>.deleteBox>form>button{
+    margin-top:10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.bookForm>.left{
+    float:left;
+    border-right:2px solid #e7e7e7;
+    padding-right:40px;
+    margin-left: 10px;
+}
+.bookForm>.left>h5>button{
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+}
+.bookForm>.left>form>button{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.bookForm>.right{
+    float:right;
+}
+.bookForm>.right>.uploadArea{
+    margin-top: 20px;
+    width:500px;
+    height:250px;
+    line-height: 250px;
+    background-color: #e7e7e7;
+    text-align: center;
+    color:#aaaaaa;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.bookForm>.right>.warningBox{
+    width:500px;
+}
+.bookForm>.right>.warningBox>p{
+    color:red;
+}

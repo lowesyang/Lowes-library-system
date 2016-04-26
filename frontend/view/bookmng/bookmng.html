@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理-Lowes Library System</title>
+    <link href="//cdn.bootcss.com/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/components/navbar/navbar.css">
+    <link rel="stylesheet" href="/components/loginBox/loginBox.css">
+    <link rel="stylesheet" href="/components/bookItem/bookItem.css">
+    <link rel="stylesheet" href="/view/bookmng/bookmng.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/flat-ui/2.2.2/js/flat-ui.min.js"></script>
+    <script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+</head>
+<body>
+<lowesnavbar></lowesnavbar>
+<% if(login!=true) {%>
+<loginbox></loginbox>
+<% } else { %>
+<div class="bookForm">
+    <div class="deleteBox">
+        <h5>删除书籍</h5>
+        <form>
+            图书ID：<input type="text" class="form-control" placeholder="图书ID">
+            数量：<input type="text" class="form-control" placeholder="数量">
+            <button type="submit" class="btn btn-danger deleteBtn">删除</button>
+            <button type="button" class="btn btn-primary goAdd">添加书籍</button>
+        </form>
+    </div>
+    <div class="left">
+        <h5>单本入库 <button class="btn btn-tip btn-danger goDelete">删除书籍</button></h5>
+        <form>
+            图书ID：<input type="text" class="form-control" placeholder="图书ID">
+            类别：<input type="text" class="form-control" placeholder="类别">
+            书名：<input type="text" class="form-control" placeholder="书名">
+            出版社：<input type="text" class="form-control" placeholder="出版社">
+            年份：<input type="text" class="form-control" placeholder="年份">
+            作者：<input type="text" class="form-control" placeholder="作者">
+            价格：<input type="text" class="form-control" placeholder="价格">
+            数量：<input type="text" class="form-control" placeholder="数量">
+            <button type="submit" class="btn btn-primary submitBtn">入库</button>
+            <button type="button" class="btn btn-default clearBtn">重置</button>
+        </form>
+    </div>
+    <div class="right">
+        <h5>批量入库</h5>
+        <div class="uploadArea">
+            <span>请将*.txt文件拖放至此</span>
+        </div>
+        <div class="warningBox">
+        </div>
+    </div>
+    <div class="cl"></div>
+</div>
+<% } %>
+<script src="/components/navbar/navbar.js"></script>
+<script src="/components/loginBox/loginBox.js"></script>
+<script src="/view/bookmng/bookmng.js"></script>
+</body>
+</html>
