@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var input=$(".bookForm>.left input");
-    var submit=$(".bookForm>.left submitBtn");
+    var submit=$(".bookForm>.left .submitBtn");
     var clear=$(".clearBtn");
     var wbox=$(".warningBox");
     var goAdd=$(".goAdd");

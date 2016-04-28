@@ -58,6 +58,7 @@ $(document).ready(function(){
             success:function(res){
                 //console.log(res);
                 if(res.code==0){
+                    $(".noResult").remove();
                     //console.log(dataField);
                     addCardItem(dataField);
                     new Vue({

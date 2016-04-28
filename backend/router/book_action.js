@@ -46,7 +46,7 @@ router.post("/addSingle",function(req,res){
                         desc:error.toString()
                     })
                 }
-                if(resp){
+                if(resp.affectedRows){
                     res.json({
                         code:0,
                         book_number:parseInt(data[0].book_number)+parseInt(result.book_number)
